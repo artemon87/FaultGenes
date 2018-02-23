@@ -1,0 +1,4 @@
+xl = pd.ExcelFile("DL.xlsx")
+df2 = df.ix[df['School Type'] != 'Proprietary']
+df2 = df.ix[df['School Type'] != 'Foreign-Public']
+df = df.rename(columns={'Zip Code': 'Zip_Code'})
